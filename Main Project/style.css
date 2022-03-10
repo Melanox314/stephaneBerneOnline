@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tangerine&display=swap');
+
+/*main modifiers*/
+
+
+body {
+	background-image: url("images/background2.jpg");
+	cursor: url("images/galetteCursorSmall.png"), auto;
+	margin:0;
+}
+
+
+.galette-party{
+	background-image: url("images/galette_party.gif");
+	background-size: cover;    
+    height: 100vh;
+    padding:0;
+    margin:0;
+}
+
+
+
+a{
+	text-decoration: none
+}
+
+/*title*/
+
+h1 {
+	color: white;
+	font-weight: bolder;
+	font-size:80px;
+}
+
+h2 {
+	color: black;
+	background-color: yellow;
+	text-align: center;
+}
+
+/*classes for avatar*/
+
+.full-avatar{
+	text-align: center;
+	position:relative;
+	top:0;
+	left:0;
+}
+
+.full-avatar .avatar {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  position: absolute;
+  top:50%;
+  left:50%;
+  transform: translate(-50%, -50.7%);
+}
+
+.full-avatar .crownGif { 
+    width: 30%;
+    heigth: 30%;
+}
+
+
+
+/*containers*/
+
+.block-centered {
+	text-align: center;
+	border-radius: 15px 50px;
+	font-family: 'Tangerine';
+	background-color : #5e64ff;
+	width: 50%;
+	margin: 16px auto;
+	box-shadow: 1px 1px 5px 1px black;
+	padding: 10px 10px;
+	font-size: 40px;
+	color: white;
+}
+
+.block-centered-small {
+	border-radius: 15px 50px;
+	background-color : #5e64ff;
+	margin: auto auto;
+	width: 33%;
+	box-shadow: 1px 1px 5px 1px black;
+	padding: 10px 10px;
+}
+
+.block_container {
+    display: flex;
+    justify-content: center;
+}
+
+#div-profileImg {
+
+	text-align: center;
+
+}
+
+/*list*/
+
+.list-inline {
+	padding: 0;
+	list-style: none;
+	font-size: 50px;
+}
+
+.list-inline li{
+	display : inline-block;
+}
+
+/*buttons*/
+
+.fa-brands {
+	color:yellow;
+	transition:.2s;
+}
+.fa-brands:hover{
+	color:darkblue;
+	transition:.2s;
+	cursor: url("images/galetteCursorSmall-Pointer.png"), pointer;
+}
+
+
+.btn-yellow{
+	background-color: yellow;
+	color: black;
+	padding: 8px 16px;
+	border-radius: 5px;
+	font-weight:bolder;
+	display: block;
+	width:80%;
+	margin: 10px auto 10px;
+	transition: .2s;
+}
+
+
+.btn-yellow:hover{
+	background-color: darkblue;
+	color: white;
+	padding: 8px 16px;
+	border-radius: 5px;
+	transition: .2s;
+	cursor: url("images/galetteCursorSmall-Pointer.png"), pointer;
+}
+
+.btn-center{
+	text-align: center;
+	width:15%;
+}
+
+
+.link:hover{
+	cursor: url("images/galetteCursorSmall-Pointer.png"), pointer;
+}
+
+/*container and subclass to make swapping pic*/
+
+.container-img-galette {
+	text-align: center;
+	/*
+	font-family: 'Roboto', serif;
+	background-color : white;
+	width: 50%;
+	margin: 16px auto;
+	box-shadow: 1px 1px 5px 1px black;
+	padding: 10px 10px;*/
+	position:relative;
+	top:0;
+	left:0;
+
+    /*display: inline-block;*/
+}
+
+.container-img-galette .img-down {
+}
+
+.container-img-galette .img-top {
+    display: none;
+    position: absolute;
+  	top:50%;
+  	left:50%;
+  	transform: translate(-50%, -50.7%);
+}
+.container-img-galette:hover .img-top {
+    display: inline;
+}
+
+@media {min-width: 768px} {
+	
+}
